@@ -71,8 +71,8 @@ let translateAlien = (text) => {
   return translation
 };
 
-if (!w['babelFish']) {
-  w['babelFish'] = translateAlien;
+if (!w['translateAlien']) {
+  w['translateAlien'] = translateAlien;
 }
 
 
@@ -115,8 +115,8 @@ if (!w['babelFish']) {
     w.alert('The aliens have received your message: ' + msg.toUpperCase() + '\n' + String(new Date()));
   }
 
-  if (!w['transmitMessage']) {
-    w['transmitMessage']  = bonus;
+  if (!w['transmitAlienMessage']) {
+    w['transmitAlienMessage']  = bonus;
   }
 
   let intervalId = setInterval(() => {
