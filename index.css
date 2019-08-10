@@ -1,0 +1,56 @@
+body {
+  background-color:#1d1d1d;
+  color: #1d1d1d;
+}
+
+.monitor {
+  font-size: 1px;
+}
+
+.hide {
+  visibility:hidden;
+}
+
+#masterPlan {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  height: 2rem;
+  width: 100%;
+  font-size: 2rem;
+  color: #2cec6f;
+  outline: none !important;
+  background-color: #5a5a5a;
+  border: #000 1px solid;
+}
+
+@keyframes monitorOn {
+  from {
+    color: #1d1d1d;
+  }
+  to {
+    color: #2cec6f;
+  }
+}
+
+@keyframes monitorOff{
+  from {
+    color: #2cec6f;
+  }
+  to {
+    color: #1d1d1d;
+  }
+}
+
+.monitor-on {
+  color: #2cec6f;
+  font-size: 3rem;
+  animation-name: monitorOn;
+  animation-duration: 2.5s;
+}
+
+.monitor-off {
+  color: #1d1d1d;
+  font-size: 1px;
+  animation-name: monitorOff;
+  animation-duration: 2.5s;
+}
